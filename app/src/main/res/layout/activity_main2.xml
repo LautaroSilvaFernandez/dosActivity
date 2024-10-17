@@ -5,15 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF5722"
+    android:onClick="llamarTelefono"
     tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="112dp"
-        android:text="PROGRAMADOR XXXXXX"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="108dp"
+        android:text="SELECCIONA UNA OPCION"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,5 +29,47 @@
         android:text="RETORNAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/ibTelefono"
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="48dp"
+        android:onClick="telefono"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/telefono" />
+
+    <ImageButton
+        android:id="@+id/ibCorreo"
+        android:layout_width="117dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="12dp"
+        android:onClick="correo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibTelefono"
+        app:srcCompat="@drawable/email" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="115dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="28dp"
+        android:onClick="linkedin"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibCorreo"
+        app:srcCompat="@drawable/linkedin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

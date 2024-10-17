@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.dosactivity"
+    namespace = "com.example.prueba_m4"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.dosactivity"
+        applicationId = "com.example.prueba_m4"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
